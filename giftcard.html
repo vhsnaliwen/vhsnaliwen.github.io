@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gift Cards - Masajes Nülan</title>
   <link rel="stylesheet" href="style.css">
+  <script src="precios-servicios.js"></script>
 </head>
 <body>
 
@@ -66,54 +67,8 @@
           </div>
         </div>
 
-        <div class="grid-3" style="margin-top: var(--space-lg);">
-          <!-- Card Option 1 -->
-          <div class="card">
-            <div>
-              <span class="label-caps">Opción Relajación</span>
-              <h3 style="margin-top: var(--space-sm);">Relajación Total</h3>
-              <p>Un escape diseñado para silenciar la mente y disolver las tensiones cotidianas de la rutina diaria.</p>
-              <div class="treatment-price-row">
-                <h4>Masaje Relajante (60 min)</h4>
-                <span class="price">$22.000</span>
-              </div>
-            </div>
-            <div style="margin-top: var(--space-md);">
-              <a href="https://wa.me/56940415858?text=Hola,%20quiero%20comprar%20una%20Gift%20Card%20de%20Masaje%20Relajante" target="_blank" class="btn btn-primary" style="width: 100%;">Comprar Regalo</a>
-            </div>
-          </div>
-
-          <!-- Card Option 2 -->
-          <div class="card">
-            <div>
-              <span class="label-caps">Opción Terapéutica</span>
-              <h3 style="margin-top: var(--space-sm);">Terapéutica Vital</h3>
-              <p>Ideal para quienes padecen dolores persistentes o buscan una descarga muscular efectiva y localizada.</p>
-              <div class="treatment-price-row">
-                <h4>Masoterapia (60 min)</h4>
-                <span class="price">$25.000</span>
-              </div>
-            </div>
-            <div style="margin-top: var(--space-md);">
-              <a href="https://wa.me/56940415858?text=Hola,%20quiero%20comprar%20una%20Gift%20Card%20de%20Masoterapia%20Terapeutica" target="_blank" class="btn btn-primary" style="width: 100%;">Comprar Regalo</a>
-            </div>
-          </div>
-
-          <!-- Card Option 3 -->
-          <div class="card">
-            <div>
-              <span class="label-caps">Monto Personalizado</span>
-              <h3 style="margin-top: var(--space-sm);">Valor Libre</h3>
-              <p>Permite que el agasajado escoja libremente el tratamiento o la combinación que mejor responda a su cuerpo.</p>
-              <div class="treatment-price-row">
-                <h4>Monto flexible</h4>
-                <span class="price">A tu elección</span>
-              </div>
-            </div>
-            <div style="margin-top: var(--space-md);">
-              <a href="https://wa.me/56940415858?text=Hola,%20quiero%20comprar%20una%20Gift%20Card%20con%20monto%20personalizado" target="_blank" class="btn btn-secondary" style="width: 100%;">Consultar Monto</a>
-            </div>
-          </div>
+        <div class="grid-3" id="giftcards-container" style="margin-top: var(--space-lg);">
+          <!-- Dynamic Gift Card options load here -->
         </div>
 
       </div>

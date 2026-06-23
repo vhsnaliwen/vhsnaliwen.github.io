@@ -448,23 +448,31 @@ header {
   bottom: 15%;
   left: 5%;
   z-index: 3;
-  color: var(--text-primary);
+  color: #111111; /* High contrast dark charcoal */
   max-width: 600px;
   padding: 0 var(--padding-container);
   animation: hero-content-scroll linear both;
   animation-timeline: scroll(root);
   animation-range: 0 70vh;
+  text-shadow: 0 1px 4px rgba(251, 249, 245, 0.9), 0 2px 8px rgba(251, 249, 245, 0.6); /* Soft cream halo to separate letters from moving video */
 }
 
 .hero-content h1 {
   margin-bottom: var(--space-sm);
-  color: var(--text-secondary);
+  color: #1e0f0d; /* Extremely deep dark chocolate */
+  font-weight: 600;
 }
 
 .hero-content p {
-  color: var(--text-muted);
+  color: #222222; /* Solid high-contrast text instead of muted olive */
   font-size: 1.125rem;
+  font-weight: 500;
   margin-bottom: var(--space-md);
+}
+
+.hero-content .italic-subtitle {
+  color: var(--primary); /* Vibrant deep olive accent */
+  font-weight: 600;
 }
 
 /* ==========================================================================
