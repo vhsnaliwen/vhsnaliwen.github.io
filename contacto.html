@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Masajes Nülan</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="precios-servicios.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="main-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">MASAJES NÜLAN</a>
+      <nav class="nav-links" id="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="giftcard.html">Gift Cards</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+      <a href="https://wa.me/56940415858" target="_blank" class="btn btn-primary btn-header" style="padding: 0.6rem 1.5rem; font-size: 0.8rem;">Reservar Cita</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="section" style="padding-bottom: var(--space-md); text-align: center;">
+      <div class="container fade-in-up">
+        <span class="label-caps">Comienza tu viaje de calma</span>
+        <h1 style="margin-top: 12px; margin-bottom: var(--space-sm);">Contacto</h1>
+        <p class="text-editorial" style="margin: 0 auto;">
+          ¿Tienes dudas o deseas reservar? Escríbenos a través del formulario o de forma directa mediante WhatsApp. Estaremos encantadas de guiarte.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM & INFORMATION -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        
+        <div class="grid-2" style="align-items: start;">
+          <!-- Column 1: Info -->
+          <div>
+            <span class="label-caps">Datos de Contacto</span>
+            <h2 style="margin: 8px 0 var(--space-md) 0;">Tu momento te espera</h2>
+            <p style="margin-bottom: var(--space-md);">
+              Puedes comunicarte directamente con Camila del Rosario Figueroa G., masoterapeuta certificada, para consultar disponibilidad o coordinar Gift Cards corporativas.
+            </p>
+
+            <div style="margin-bottom: var(--space-md);">
+              <h4 class="label-caps" style="font-size: 0.75rem; margin-bottom: 4px;">WhatsApp Directo</h4>
+              <a href="https://wa.me/56940415858" target="_blank" style="font-size: 1.15rem; color: var(--primary); font-weight: 500;">+56 9 4041 5858</a>
+            </div>
+
+            <div style="margin-bottom: var(--space-md);">
+              <h4 class="label-caps" style="font-size: 0.75rem; margin-bottom: 4px;">Redes Sociales</h4>
+              <a href="https://instagram.com/" target="_blank" style="font-size: 1.15rem; color: var(--primary); font-weight: 500;">Instagram: @masajesnulan</a>
+            </div>
+
+            <div style="margin-bottom: var(--space-md);">
+              <h4 class="label-caps" style="font-size: 0.75rem; margin-bottom: 4px;">Certificación</h4>
+              <p style="font-size: 0.95rem;">
+                Camila del Rosario Figueroa G.<br>Masoterapeuta Profesional Certificada
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2: Minimalist Form -->
+          <div class="card" style="padding: calc(var(--space-md) * 1.5);">
+            <form id="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label for="form-name">Nombre Completo</label>
+                <input type="text" id="form-name" class="form-control" placeholder="Escribe tu nombre" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Correo Electrónico</label>
+                <input type="email" id="form-email" class="form-control" placeholder="nombre@ejemplo.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-phone">Teléfono / WhatsApp</label>
+                <input type="tel" id="form-phone" class="form-control" placeholder="+56 9 1234 5678" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-service">Tratamiento de Interés</label>
+                <select id="form-service" class="form-control" required style="border-radius: 0; appearance: none; -webkit-appearance: none;">
+                  <option value="" disabled selected>Selecciona un tratamiento</option>
+                  <!-- Dynamic options will load here -->
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="form-msg">Mensaje o Consulta</label>
+                <textarea id="form-msg" class="form-control" placeholder="Cuéntanos qué necesitas..." required></textarea>
+              </div>
+
+              <div style="margin-top: var(--space-md);">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>MASAJES NÜLAN</h2>
+          <p>Tu cuerpo merece cuidado. Tu mente, descanso. Tu alma, calma. Un espacio dedicado al bienestar integral.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="beneficios.html">Beneficios</a></li>
+            <li><a href="giftcard.html">Gift Cards</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Contacto & Redes</h3>
+          <ul>
+            <li><a href="https://wa.me/56940415858" target="_blank">WhatsApp: +56 9 4041 5858</a></li>
+            <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+            <li style="margin-top: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.6);">
+              Camila del Rosario Figueroa G.<br>Masoterapeuta Certificada
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Masajes Nülan. Todos los derechos reservados.</p>
+        <p>Diseño Premium Soft Minimalism</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

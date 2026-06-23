@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masajes Nülan - Tu momento de calma</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="precios-servicios.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="main-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">MASAJES NÜLAN</a>
+      <nav class="nav-links" id="nav-menu">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="giftcard.html">Gift Cards</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <a href="https://wa.me/56940415858" target="_blank" class="btn btn-primary btn-header" style="padding: 0.6rem 1.5rem; font-size: 0.8rem;">Reservar Cita</a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (SCROLL-DRIVEN) -->
+    <section class="hero-scroll-container" id="hero-sec">
+      <div class="hero-sticky-wrapper">
+        <video id="hero-video" class="hero-video-bg" autoplay loop muted playsinline>
+          <source src="assets/cuello.webm" type="video/webm">
+          Tu navegador no soporta reproducción de video.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up" id="hero-text-block">
+          <span class="italic-subtitle">Un momento para ti</span>
+          <h1>Tu bienestar, mi propósito.</h1>
+          <p>Cada masaje es una invitación a relajarte, soltar tensiones y reconectar con tu cuerpo de forma profunda y consciente.</p>
+          <a href="https://wa.me/56940415858" target="_blank" class="btn btn-primary">Agendar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL BLOCK ("SERVICIO") -->
+    <section class="section editorial-block">
+      <div class="container">
+        <span class="italic-subtitle">Un espacio de sanación y autocuidado</span>
+        <h2 class="serif-font">Tratamientos personalizados diseñados para armonizar tu cuerpo y restaurar tu paz interior.</h2>
+        <p class="text-editorial">
+          En Masajes Nülan entendemos que cada cuerpo cuenta una historia diferente. Mediante técnicas manuales integrativas, maderoterapia y drenaje linfático, te acompaño a liberar el estrés acumulado, desintoxicar tu organismo y revitalizar tu energía natural en un ambiente de absoluta serenidad.
+        </p>
+        <div style="margin-top: var(--space-md);">
+          <a href="servicios.html" class="btn btn-secondary">Explorar Servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED TREATMENTS PREVIEW -->
+    <section class="section" style="background-color: var(--bg-card);">
+      <div class="container">
+        <div class="flex-between" style="margin-bottom: var(--space-lg); flex-wrap: wrap; gap: var(--space-sm);">
+          <div>
+            <span class="label-caps">Nuestra Selección</span>
+            <h2 style="margin-top: 8px;">Tratamientos Destacados</h2>
+          </div>
+          <a href="servicios.html" class="label-caps" style="border-bottom: 1px solid var(--primary); padding-bottom: 2px;">Ver todos los servicios &rarr;</a>
+        </div>
+
+        <div class="grid-3" id="featured-treatments-container">
+          <!-- Dynamic featured treatments load here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCENT DETAIL GRID -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="editorial-img-container">
+            <img src="assets/salon2.jpeg" alt="Técnicas Naturales">
+          </div>
+          <div class="text-content-padding">
+            <span class="label-caps">Por qué elegirnos</span>
+            <h2 style="margin: var(--space-sm) 0 var(--space-md) 0;">Técnicas Naturales, Resultados Visibles.</h2>
+            <ul class="checkmark-list">
+              <li>Reduce el estrés y relaja de forma natural el sistema nervioso.</li>
+              <li>Favorece activamente la eliminación de toxinas y mejora la circulación sanguínea.</li>
+              <li>Mejora sustancialmente la firmeza, elasticidad y textura de la piel.</li>
+              <li>Tratamientos personalizados llevados a cabo por una masoterapeuta certificada.</li>
+            </ul>
+            <div style="margin-top: var(--space-md);">
+              <a href="beneficios.html" class="btn btn-secondary">Conocer Beneficios</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIFT CARD BANNER -->
+    <section class="section bg-olive-tint" style="text-align: center;">
+      <div class="container">
+        <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: var(--space-md);">
+          <span class="label-caps" style="color: rgba(255,255,255,0.85);">El Regalo Perfecto</span>
+          <h2>Regalá Bienestar, Regalá Nülan.</h2>
+          <p class="text-editorial" style="margin: 0 auto;">
+            Porque esa persona especial merece más que un obsequio material... merece un momento sagrado para desconectar y volver a sí misma.
+          </p>
+          <div style="margin-top: var(--space-sm);">
+            <a href="giftcard.html" class="btn btn-white">Comprar Gift Card</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>MASAJES NÜLAN</h2>
+          <p>Tu cuerpo merece cuidado. Tu mente, descanso. Tu alma, calma. Un espacio dedicado al bienestar integral.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="beneficios.html">Beneficios</a></li>
+            <li><a href="giftcard.html">Gift Cards</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Contacto & Redes</h3>
+          <ul>
+            <li><a href="https://wa.me/56940415858" target="_blank">WhatsApp: +56 9 4041 5858</a></li>
+            <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+            <li style="margin-top: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.6);">
+              Camila del Rosario Figueroa G.<br>Masoterapeuta Certificada
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Masajes Nülan. Todos los derechos reservados.</p>
+        <p>Diseño Premium Soft Minimalism</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
