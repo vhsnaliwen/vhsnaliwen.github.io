@@ -200,8 +200,8 @@ p {
 
 @keyframes nav-shrink {
   to {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
   }
 }
 
@@ -222,7 +222,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem var(--padding-container);
+  padding: 0.5rem var(--padding-container);
   max-width: var(--max-width);
   margin: 0 auto;
   animation: nav-shrink linear both;
@@ -231,11 +231,27 @@ header {
 }
 
 .logo {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  letter-spacing: 0.1em;
-  color: var(--text-primary);
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 140px; /* Enlarge by another 40% from 100px */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@keyframes logo-shrink {
+  to {
+    height: 85px; /* Shrunk height is still large, highly readable and clear */
+  }
+}
+
+header .logo-img {
+  animation: logo-shrink linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 100px;
 }
 
 .nav-links {
